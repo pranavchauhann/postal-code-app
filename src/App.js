@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+// App.js
+import React, { useState } from 'react';
 import './App.css';
+import EnterPostalCode from './EnterPostalCode';
+import LocationInfo from './LocationInfo';
 
 function App() {
+  const [locationData, setLocationData] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const fetchData = (postalCode) => {
+    // Construct the API URL
+    const apiUrl = `https://api.zippopotam.us/in/${postalCode}`;
+
+    setIsLoading(true);
+
+    // Fetch data from the API
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        setLocationData(data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        setLocationData({ error: error.message });
+        setIsLoading(false);
+      });
+  };
+
+  const clearInfo = () => {
+    setLocationData(null);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Postal Code Location Info</h1>
+      <EnterPostalCode onSearch={fetchData} />
+      {isLoading ? (
+        <div className="loading-indicator">Loading...</div>
+      ) : (
+        <LocationInfo data={locationData} clearInfo={clearInfo} />
+      )}
     </div>
   );
 }
