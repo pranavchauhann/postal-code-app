@@ -1,68 +1,42 @@
-# Getting Started with Create React App
+# ZIP Code Information App
 
-This porject is build by: Pranav Chauhan.
+![App Screenshot](src/images/app1.png)
+![App Screenshot](src/images/app2.png)
 
-In the project directory, you can run:
 
-### `npm start`
+This React app, developed by Pranav Chauhan, allows users to enter a postal code and retrieve location information. It's designed to provide a seamless experience with a clean and stylish interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- **Postal Code Input**: 
+    Users can easily input their postal code.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Location Information Retrieval**: 
+    The app fetches location data from an API and displays it.
 
-### `npm test`
+- **Graceful Error Handling**: 
+    In case of API errors, the app displays an informative error message.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Loading Indicator**: 
+    Keep users informed with a loading indicator during data retrieval.
 
-### `npm run build`
+- **Clear Information Option**: 
+    Users can reset the displayed information with a single click.
+    
+- **Stylish Design**: 
+    The app is visually appealing, thanks to the use of CSS for a polished look.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Use
+1. Clone this repository to your local machine.
+2. Navigate to the project folder and run `npm install` to install the necessary dependencies.
+3. Start the app by running `npm start`.
+4. Open your web browser and go to `http://localhost:3000` to access the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
+- React
+- CSS (or specify your CSS framework)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Credits
+- Developed by Pranav Chauhan
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is open-source under the [MIT License](LICENSE).
