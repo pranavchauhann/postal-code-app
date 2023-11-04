@@ -1,6 +1,8 @@
 # ZIP Code Information App
 
 ![App Screenshot](src/images/app1.png)
+
+
 ![App Screenshot](src/images/app2.png)
 
 
@@ -21,7 +23,7 @@ This React app, developed by Pranav Chauhan, allows users to enter a postal code
 
 - **Clear Information Option**: 
     Users can reset the displayed information with a single click.
-    
+
 - **Stylish Design**: 
     The app is visually appealing, thanks to the use of CSS for a polished look.
 
