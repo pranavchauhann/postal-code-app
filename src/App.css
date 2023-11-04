@@ -3,53 +3,64 @@
 .App {
   text-align: center;
   margin: 20px;
-
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
+  color: #ff9d00;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 input {
-  padding: 8px;
-  font-size: 1em;
+  padding: 10px;
+  font-size: 1.2em;
   margin-right: 10px;
+  border: 2px solid #ff9d00;
+  border-radius: 5px;
 }
 
 button {
-  padding: 8px 16px;
-  background-color: #007bff;
+  padding: 10px 20px;
+  background-color: #ff9d00;
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-left: 10px; 
+  margin-left: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #ff9d00;
 }
 
 .LocationInfo {
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   padding: 20px;
   margin-top: 20px;
   text-align: left;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-
 
 .loading-indicator {
-  font-size: 1.2em;
-  color: #007bff;
+  font-size: 1.5em;
+  color: #ffbb00;
   margin-top: 20px;
   padding: 10px;
-  animation: loading 1s infinite;
+  animation: pulse 1s infinite;
 }
 
-@keyframes loading {
-  0% { opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { opacity: 0.5; }
+@keyframes pulse {
+  0% { transform: scale(0.9); }
+  50% { transform: scale(1); }
+  100% { transform: scale(0.9); }
 }
-
-
